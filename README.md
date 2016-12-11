@@ -1,9 +1,11 @@
 # Exploratory-Analysis-Course-Project-2
 Exploratory Analysis Peer -graded Assignment: Course Project 2
 
+
 Instructions
 
 Fine particulate matter (PM2.5) is an ambient air pollutant for which there is strong evidence that it is harmful to human health. In the United States, the Environmental Protection Agency (EPA) is tasked with setting national ambient air quality standards for fine PM and for tracking the emissions of this pollutant into the atmosphere. Approximatly every 3 years, the EPA releases its database on emissions of PM2.5. This database is known as the National Emissions Inventory (NEI). You can read more information about the NEI at the EPA National Emissions Inventory web site.
+
 
 Data
 
@@ -36,9 +38,7 @@ For each year and for each type of PM source, the NEI records how many tons of P
   year
     : The year of emissions recorded
     
-Source Classification Code Table (
-Source_Classification_Code.rds
-): 
+Source Classification Code Table (Source_Classification_Code.rds): 
 
 This table provides a mapping from the SCC digit strings in the Emissions table to the actual name of the PM2.5 source. The sources are categorized in a few different ways from more general to more specific and you may choose to explore whatever categories you think are most useful. For example, source “10100101” is known as “Ext Comb /Electric Gen /Anthracite Coal /Pulverized Coal”.
 Read each of the two files using the 
@@ -48,11 +48,14 @@ readRDS()
 NEI <- readRDS("summarySCC_PM25.rds")
 SCC <- readRDS("Source_Classification_Code.rds")
 
+
 Assignment
 
 The overall goal of this assignment is to explore the National Emissions Inventory database and see what it say about fine particulate matter pollution in the United states over the 10-year period 1999–2008. You may use any R package you want to support your analysis.
 
+
 Questions 
+
 You must address the following questions and tasks in your exploratory analysis. For each question/task you will need to make a single plot. Unless specified, you can use any plotting system in R to make your plot.
 
 Have total emissions from PM2.5 decreased in the United States from 1999 to 2008? Using the base plotting system, make a plot showing the total PM2.5 emission from all sources for each of the years 1999, 2002, 2005, and 2008
@@ -68,6 +71,7 @@ Across the United States, how have emissions from coal combustion-related source
 How have emissions from motor vehicle sources changed from 1999–2008 in Baltimore City?
 
 Compare emissions from motor vehicle sources in Baltimore City with emissions from motor vehicle sources in Los Angeles County, California (fips == "06037"). Which city has seen greater changes over time in motor vehicle emissions?
+
 
 Making and Submitting Plots
 
